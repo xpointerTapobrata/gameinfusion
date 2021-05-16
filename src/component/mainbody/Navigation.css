@@ -1,0 +1,118 @@
+*{
+    outline: none;
+}
+
+.nav{
+    height: 10vh;
+    width: 105.4%;
+    border-bottom:2px solid var(--primary);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0px 2px 8px rgba(32, 32, 32, 0.3);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    
+}
+
+.nav h3{
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    background-color: var(--primary);
+    height: 6vh;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    color: rgb(19, 19, 19);
+    position: relative;
+    padding: 1em;
+}
+
+.tooltip{
+    height: 30px;
+    width: 100px;
+    background: rgb(225, 255, 223);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    left: 17%;
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+    transform: scale(0);
+    font-weight: 600;
+    border-radius: 5px;
+    transition: transform 0.02s ease;
+    text-align: center;
+    z-index: 5;
+}
+
+.visible{
+    
+    transform: scale(0.8);
+    transition: transform 0.2s ease;
+}
+
+.search{
+    width: 30%;
+    display: flex;
+}
+
+input{
+    height: 4vh;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: 1px solid var(--primary);
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgb(139, 139, 139);
+    transition: background-color 0.2s ease;
+}
+
+input::placeholder{
+    font-weight: 600;
+    color: rgb(49, 49, 49);
+}
+
+input::placeholder:active{
+    color: black;
+}
+
+input:focus{
+    background-color: white;
+    transition: background-color 0.3s ease;
+    filter: brightness(1.1);
+}
+
+input:focus{
+    border-left: 2px solid var(--primary);
+    border-top: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
+
+button{
+    width: 40px;
+    height: 4vh;
+    background-color: var(--primary);
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: var(--secondary);
+    cursor: pointer;
+    transform: translateX(-6%);
+}
+
+.search button:active{
+    background-color: rgb(72, 180, 22);
+}
+
+input:focus{
+    outline: none;
+}

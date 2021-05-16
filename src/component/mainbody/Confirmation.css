@@ -1,0 +1,55 @@
+.confirm, .preloader{
+    display:none !important ;
+}
+
+.confirmShow, .showpreloader{
+    display: flex !important ;
+}
+
+.container{
+    position: absolute;
+    height: 90%;
+    width: 80%;
+    background-color: rgb(22, 22, 22);
+    top: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transform: scale(0.95);
+}
+
+.thankyou{
+    color: var(--tertiary);
+    margin-bottom: 25px;
+}
+
+.confirm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download{
+    height: 40px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-bottom: 18px;
+}
+
+.download:active{
+    transform: scale(0.97) translateX(-6%);
+}
+
+.pdf{
+    background-color: white;
+    border: none;
+    color: black;
+}

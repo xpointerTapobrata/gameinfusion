@@ -1,0 +1,79 @@
+.videos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    overflow-y: scroll;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+    padding-left: 3em;
+    transform: translateY(-5%);
+}
+
+.videos::-webkit-scrollbar{
+    width: 9px;
+}
+
+.videos::-webkit-scrollbar-thumb{
+    background-color: greenyellow;
+}
+
+.videoInfo{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(19, 19, 19);
+    gap: 1em;
+    transform: scale(0.9);
+    width: 450px;
+    height: 300px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--primary);
+}
+
+.videoInfo img{
+    transform: translateY(40%);
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+    transform: scale(1.2);
+}
+
+.gamename{
+    height: 40px !important;
+    color: greenyellow;
+}
+
+.detailsVideo p{
+    text-align: right;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 60px;
+    font-size: 1.1em;
+}
+
+.detailsVideo h3{
+    font-size: 1.3em;
+}
+
+.detailsVideo{
+    padding: 6px;
+    height: 30px;
+    width: 100%;
+}
+
+.detailsVideo{
+    height: 70%;
+}
+
+.vidWatch{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    position: absolute;
+    right: 3%;
+    bottom: 10%;
+    font-weight: 600;
+}

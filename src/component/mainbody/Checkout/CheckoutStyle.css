@@ -1,0 +1,246 @@
+.checkoutpage{
+    color: white;
+    height: 85vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 19%;
+    overflow-x: hidden;
+}
+
+.pages{
+    display: flex;
+    margin-top: 1em;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.pageName{
+    color: var(--primary);
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+.stepper p{
+    border-right: none !important;
+}
+
+.stepper{
+    height: 80px;
+    width: 50%;
+    background: rgb(24, 24, 24);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    position: relative;
+}
+
+.leftlabels, .rightlabels{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.rightlabels{
+    justify-content: flex-end;
+}
+
+.leftlabels p{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    margin-right: 15px;
+    transform: translateX(5%);
+}
+
+.rightlabels p{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.paymentStep{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.addressStep, .paymentStep{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85em;
+    position: relative;
+    display: none;
+}
+
+.paymentStepShow{
+    display: flex;
+    border: 2px solid var(--tertiary);
+}
+
+.paymentStepActive{
+    display: flex;
+    border: 2px solid var(--primary);
+}
+
+.addressForm, .payment{
+    height: 100%;
+    width: 1000px !important;
+    background: rgb(24, 24, 24);
+}
+
+.payment{
+    transform: translateX(120%);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.addressForm{
+    transform: translateX(50%);
+    opacity: 1;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.slideaddress{
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.slidepayment{
+    transform: translateX(-50%);
+    opacity: 1;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+
+.tickaddress,.tickpayment{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85em;
+    transform: translateX(0%);
+    color: black;
+    display: none;
+}
+
+
+.showSteps{
+    display: flex;
+}
+
+.progressLine{
+    height: 1px;
+    width: 0%;
+    background-color: var(--primary);
+    position: absolute;
+    top: 13.9%;
+    left: 39.7%;
+    transition: width 0.4s ease;
+}
+
+.line{
+    height: 1px;
+    width: 21%;
+    background-color: rgb(70, 70, 70);
+    position: absolute;
+    top: 13.9%;
+    left: 39.7%;
+}
+
+.coloredLabel{
+    color : var(--primary);
+}
+
+.progressed{
+    width: 21%;
+    transition: width 0.6s ease;
+}
+
+.hide{
+    display: none;
+}
+
+.grayed{
+    background-color: gray;
+    color: black;
+    cursor: not-allowed;
+}
+
+
+.selection{
+    cursor: not-allowed;
+    background-color: gray;
+    color: black;
+    display: none;
+}
+
+.probuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.probuttons button{
+    margin: 1em;
+    height: 40px;
+    width: 80px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.probuttons button:active{
+    background-color: rgb(119, 185, 20);
+}
+
+.back{
+    background-color: rgb(26, 26, 26);
+    border: 1px solid greenyellow ;
+    color: var(--tertiary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(5%);
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.backtocart{
+    height: 40px;
+    width: 80px;
+    border-radius: 3px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    border: 1px solid var(--primary);
+}
+
+.paybutton{
+    width: 120px !important;
+    padding: 2px;
+    
+}
+
+.grayed:focus, .selection:focus{
+    background-color: gray !important;
+    color: black !important;
+}

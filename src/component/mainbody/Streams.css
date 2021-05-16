@@ -1,0 +1,107 @@
+.streams{
+    height: 94vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.streamheader{
+    padding: 1.6em;
+    width: 100%;
+    background-color: var(--primary);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    font-size: 0.8em;
+    z-index: 3;
+}
+
+.streams::-webkit-scrollbar{
+    background-color: black;
+    width: 6px;
+  }
+
+  .streams::-webkit-scrollbar-thumb{
+    background-color: var(--primary);
+  }
+
+  .streams::-webkit-scrollbar-track{
+      width: 10px;
+      background-color: black;
+      border-left: 1px solid greenyellow;
+  }
+  
+  .streams::-webkit-scrollbar-thumb{
+      
+      border: 1px solid var(--primary);
+  }
+
+  .ytstreams{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(32, 32, 32);
+    align-items: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 1px solid rgb(70, 70, 70);
+    padding: 5px;
+    z-index: 0;
+    padding-bottom: 15px;
+  }
+
+  .streamdata{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 9px;
+  }
+
+  
+.streamdata .videoname, .streamdata p{
+    color: var(--primary);
+}
+
+.streamdata h5{
+    color: var(--tertiary);
+    text-transform: uppercase;
+}
+
+.streamdata p{
+    font-size: 0.8em;
+    border-right: none;
+}
+
+.streamdata p:hover{
+    text-decoration: underline;
+}
+
+.ytstreams img{
+    height: 40px;
+    width: 60px;
+    margin-left: 5px;
+    border-radius: 5PX;
+}
+
+.hide{
+    overflow-y: hidden;
+}
+
+@media screen and (min-width: 1600px) {
+    .streamdata{
+        transform: scale(1);
+    }
+    .ytstreams{
+        height: 190px;
+        font-size: 1.2em;
+    }
+}

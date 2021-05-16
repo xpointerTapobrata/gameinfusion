@@ -1,0 +1,223 @@
+.products{
+    height: 110vh;
+    width: 100%;
+    display: none;
+    z-index: 5;
+    flex-direction: column;
+}
+
+.showProducts{
+    display: flex;
+}
+
+.featured{
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2em;
+    border-bottom: 1px solid var(--primary);
+    box-shadow: 0px 20px 30px rgba(173, 255, 47, 0.14);
+    column-gap: 5px;
+    justify-content: center;
+    transform: translateX(0%);
+}
+
+.featureInfo{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40vh;
+}
+
+.featureInfo p{
+    border-right: none;
+    height: 70%;
+    font-size: 1.1em;
+    color: var(--tertiary);
+}
+
+
+.featureInfo h2{
+    font-size: 1.7em;
+    color: var(--primary)
+}
+
+.featurePic{
+    background-color: cadetblue;
+    transform: scale(0.68) translateY(-20%);
+    box-shadow: 5px 5px 50px rgba(173, 255, 47, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.featurePic:hover{
+    transform: scale(0.72) translateY(-20%);
+    animation: animate infinite linear 0.73s alternate;
+    transition: transform 0.4s ease;
+}
+
+@keyframes animate{
+    0%{
+        box-shadow: 5px 5px 50px rgba(173, 255, 47, 0.39);
+    }
+
+    100%{
+        box-shadow: -5px -5px 50px rgba(173, 255, 47, 0.39);
+    }
+
+}
+
+
+.realPrice{
+    color: rgba(225, 255, 187, 0.7);
+    text-decoration: line-through;
+    font-size: 0.85em;
+    display: none;
+}
+
+.discount{
+    color: rgba(225, 255, 187, 0.9);
+    text-shadow: 1px 0px 2px var(--primary);
+    font-size: 1.2em;
+    display: none;
+}
+
+.showDiscount{
+    display: inline-block;
+}
+
+
+.featureButton, .goodsButton, .remove{
+    height: 45px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+.featureButton{
+    margin-left: 5px;
+}
+
+.goodsButton{
+    transform: scale(0.8);
+    align-self: flex-start;
+    margin-left: 3px;
+    display: flex;
+}
+
+.remove{
+    transform: scale(0.8);
+    align-self: flex-start;
+    margin-left: 3px;
+    background-color: black;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    position: absolute;
+    bottom: 2.5%;
+    display: none;
+}
+
+.toggleCart{
+    display: flex;
+}
+
+.price{
+    color: var(--primary);
+    font-size: 1.3em;
+}
+
+.icons{
+    color: rgba(241, 255, 220, 0.6);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.otherProducts{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding-left: 3em;
+    padding-top: 3em;
+    row-gap: 25px;
+    padding-bottom: 10px;
+}
+
+.goods{
+    height: 600px;
+    width: 80%;
+    border-bottom: 2px solid var(--primary);
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 14px;
+    transform: scale(0.95);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.goodsInfo{
+    margin-top: 18px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    transform: translateX(-1%);
+}
+
+.goods p{
+    border-right: none;
+    height: 40px;
+    color: var(--tertiary);
+}
+
+.goods img{
+    height: 280px;
+    width: 100%;
+}
+
+.goods:hover{
+    transform: scale(0.98);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 2px 2px 30px rgba(173, 255, 47, 0.33);
+}
+
+.goodsName{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding-left: 15px;
+    color: var(--primary);
+    font-size: 1.1em;
+    height: 30px;
+    transform: translateY(20%);
+    margin-top: 5px;
+}
+
+
+.priceLabel{
+    color: var(--primary);
+    text-align: left;
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+}
+
+@media only screen and (max-width: 1400px){
+    .featurePic{
+        transform: scale(0.6) translateY(-30%);
+    }
+
+    .featurePic:hover{
+        transform: scale(0.63) translateY(-30%);
+    }
+}

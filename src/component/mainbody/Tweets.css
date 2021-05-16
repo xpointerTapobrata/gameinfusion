@@ -1,0 +1,172 @@
+.gamesHub::-webkit-scrollbar{
+    width: 6px;
+}
+
+.gamesHub::-webkit-scrollbar-thumb{
+    background-color: var(--primary);
+}
+.gamesHub{
+    background: rgb(0, 0, 0);
+    overflow-x: hidden;
+    padding-bottom: 1em;
+}
+
+.cover{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 90%;
+    overflow-x: hidden;
+    gap: 15px;
+    padding: 10px;
+    justify-content: center;
+    transform: translateX(5%);
+}
+
+.fimage{
+    position: relative;
+}
+
+.fimage{
+    position: relative;
+    z-index: 5;
+}
+
+.overlay, .rightOverlay{
+    z-index: 999;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    box-shadow: inset 0px -90px 40px rgb(0, 0, 0);
+    position: absolute;
+    opacity: 0.6;
+    height: 93%;
+    width: 63%;
+    
+    transform: translateX(-5%)translateY(4%);
+}
+
+.rightOverlay{
+    width: 42.5%;
+    transform: translateX(143%) translateY(4%);
+}
+
+.headline{
+    color: var(--tertiary);
+    position: absolute;
+    bottom: 0%;
+    width: 60%;
+    padding: 3.5em;
+    z-index: 1000;
+}
+
+.fourImage{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    transform: translateX(1.5%);
+}
+
+
+.article{
+    background-color: rgb(32, 32, 32);
+    width: 90%;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 14px;
+    transform: scale(0.95);
+    border-right: 2px solid var(--primary);
+    cursor: pointer;
+}
+
+.infos{
+    padding: 20px 0px;
+    padding-right: 10px;
+}
+
+.infos h3{
+    color: var(--primary);
+}
+
+.article p {
+    border: none;
+    height: 60%;
+    width: 80%;
+}
+
+.hideText p{
+    overflow: hidden;
+    height: 20vh !important;
+}
+
+.hideText{
+    height: 100% !important;
+}
+
+.reviews{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+}
+
+.rev{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: rgb(31, 31, 31);
+    overflow: hidden !important;
+    height: 20vh;
+    border-left: 2px solid var(--primary);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rev p{
+    border: none;
+}
+
+.desc p{
+    display: flex;
+    justify-content: flex-start;
+    height: 35%;
+}
+
+.desc{
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.desc h3{
+    color: var(--primary);
+    font-size: 0.95em;
+    margin-bottom: 5px;
+}
+
+.red{
+    color: red;
+    border: 2px solid red;
+}
+
+.yellow{
+    color: orange;
+    border: 2px solid orange;
+}
+
+.green{
+    color: rgb(0, 253, 0);
+    border: 2px solid rgb(0, 255, 0);
+}
+
+.scoreCircle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,103 @@
+.payReview{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 2em;
+    color: var(--primary);
+    flex-direction: column;
+    text-align: center;
+}
+
+.fetch{
+    color: white !important;
+    border: none;
+}
+
+.payReview h3{
+    margin-bottom: 10px;
+}
+
+.review{
+    width: 100%;
+    height: 85%;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+.review::-webkit-scrollbar{
+    width: 10px;
+    background: rgb(24, 24, 24);
+}
+
+.review::-webkit-scrollbar-thumb{
+    background-color: greenyellow;
+}
+
+.productName{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    padding: 1em;
+    border-bottom: 1px solid rgb(56, 56, 56);
+}
+
+.prods{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.prods p{
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pricings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creditcard{
+    height: 15%;
+    width: 100%;
+    border-top: 1px solid greenyellow;
+    padding: 1em;
+}
+
+.cardEle{
+    width: 100%;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.errorMessage{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--tertiary);
+    color: rgb(165, 0, 0);
+    border: 2px solid rgb(165, 0, 0);
+    height: auto;
+    width: 300px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    bottom: -4%;
+    left: 35%;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.2s ease;
+}
+
+.errMsgShow{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}

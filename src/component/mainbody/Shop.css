@@ -1,0 +1,225 @@
+.shop{
+    height: 106vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*background-color: blue;*/
+    z-index: 6;
+    padding-bottom: 5px;
+    overflow-y: scroll;
+}
+
+.shop::-webkit-scrollbar{
+    width: 8px;
+    background-color: black;
+}
+
+.shop::-webkit-scrollbar-thumb{
+    background-color: var(--primary);
+    width: 8px;
+}
+
+.ad{
+    height: 20vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   /* background-color: blanchedalmond;*/
+    text-align: center;
+    color: rgb(241, 255, 220);
+    font-size: 1.1em;
+    display: none;
+    padding: 30px;
+    line-height: 2.5rem;
+}
+
+.grab{
+    color: var(--primary);
+}
+
+.category{
+    height: 8vh;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding-left: 5em;
+    position: sticky;
+    top: 0%;
+    background-color: rgb(8, 8, 8);
+    z-index: 10;
+    display: none;
+    padding: 2em;
+}
+
+.categoryName{
+    height: 40px;
+    width: 140px;
+    padding: 5px;
+    border: 1px solid greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: greenyellow;
+    margin-left: 2em;
+    position: relative;
+    cursor: pointer;
+}
+
+.labelName{
+    color: greenyellow;
+}
+
+.cart{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.tool{
+    height: 30px;
+    width: 60px;
+    background-color: rgb(225, 255, 223);
+    color: black;
+    border-radius: 5px;
+    position: absolute;
+    right: 19.5%;
+    top: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.9em;
+    transform: scale(0);
+    transition: transform 0.02s ease;
+}
+
+.toolShow{
+    transform: scale(0.8);
+    transition: transform 0.2s ease;
+}
+
+.cartbutton{
+    height: 40px;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border:1px solid var(--primary);
+    color: var(--primary);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.options{
+    position: absolute;
+    height: 9rem;
+    width: 140px;
+    border: 1px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    bottom: 50%;
+    color: var(--primary);
+    transform: scaleY(0) translateX(95%);
+    transition: transform 0.25s ease;
+    transform-origin: top;
+    z-index: 9;
+    background-color: black;
+}
+
+.options h5{
+    height: 3rem;
+    width: 100%;
+    border-bottom: 1px solid var(--primary);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.options h5:hover{
+    color: rgb(219, 255, 164);
+}
+
+.showOptions{
+    transform: scaleY(1) translateX(95%);
+    transform-origin: top;
+    transition: transform 0.25s ease;
+}
+
+.badge{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    right: 19.5%;
+    bottom: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--primary);
+    display: none;
+    font-weight: 600;
+    
+}
+
+.badgeDisplay{
+    display: flex;
+}
+
+
+@media only screen and (max-width: 1800px) {
+    .options{
+        position: absolute;
+        top: 100%;
+      
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .options{
+        position: absolute;
+        top: 100%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .options{
+        position: absolute;
+        top: 100%;
+      
+    }
+
+    .badge{
+        transform: translateX(80%);
+        right: 11%;
+    }
+
+    .cartbutton{
+        width: 50%;
+    }
+}
+
+.msg{
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    color: var(--tertiary);
+}
+
+.showMessage{
+    display: flex;
+}
+
+.showad{
+    display: flex;
+}

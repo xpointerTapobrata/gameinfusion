@@ -1,0 +1,84 @@
+.photos{
+    background-color:rgb(24, 24, 24);
+    width: 100%;
+    height: 107.6vh;
+    padding-left: 42px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.pic:hover{
+    box-shadow: inset 5px 5px 20px black;
+}
+
+.pic img{
+    box-shadow: 0px 1px 29px rgb(14, 14, 14);
+}
+
+.piccontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.showPicContainer{
+    display: flex;
+}
+
+.piccontainer img{
+    transform: scale(1);
+    transition: transform 0.4s ease;
+}
+
+.zoom{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.zoom img{
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
+    z-index: 0;
+}
+
+.shade{
+    height: 240px;
+    width: 380px;
+    box-shadow: inset 2px 4px 75px black;
+    position: absolute;
+   /* left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;*/
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.showshade{
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    filter: blur(5);
+}
+
+.modal{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    transform: translateX(25%);
+}
+
+.pic{
+    height: 240px;
+    width: 380px;
+    grid-template-columns: 1fr;
+    display: none;
+}
+
+.showPic{
+    display: grid;
+}

@@ -1,0 +1,55 @@
+.address h3{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+    color: var(--primary);
+    margin-top: 1em;
+    transform: scale(1.1);
+}
+
+.form{
+    width: 100%;
+    height: 42vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    transform: translateY(3%);
+    padding: 18px;
+}
+
+.leftForm, .rightForm{
+    height: 100%;
+    width: 100%;
+    line-height: 2.6em;
+}
+
+.leftForm h4{
+    font-weight: 500;
+    transform: translateY(10%);
+    color: var(--tertiary);
+}
+
+.rightForm h4{
+    font-weight: 500;
+    color: var(--tertiary);
+}
+
+.address input{
+    background-color: rgb(24, 24, 24);
+    height: 2rem;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid var(--primary);
+    color: var(--tertiary);
+    margin-bottom: 6px;
+}
+
+.address input:focus{
+    background: rgb(32, 32, 32);
+}
+
+.sub{
+    visibility: hidden;
+}

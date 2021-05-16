@@ -1,0 +1,25 @@
+
+
+.secondnav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(-1%);
+}
+
+.links{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--primary);
+    
+}
+
+.links:hover{
+    color: rgb(235, 255, 204);
+}
+
+.active{
+    color: var(--tertiary);
+}

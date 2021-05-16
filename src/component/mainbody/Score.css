@@ -1,0 +1,112 @@
+.scoring{
+    height: 85vh;
+    width: 80%;
+    overflow-y: scroll;
+    background-color: rgb(29, 29, 29);
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.scoring img{
+    transform: scale(1.2);
+   /* box-shadow: 0px 14px 16px rgb(15, 15, 15) 0px 0px 12px rgb(15, 15, 15);*/
+    margin-left: 8px;
+    z-index: 0;
+}
+
+.scoring::-webkit-scrollbar{
+    width: 6px;
+}
+
+.scoring::-webkit-scrollbar-thumb{
+    background-color: var(--primary);
+}
+
+.opinions{
+    min-height: 40vh;
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(20%);
+    padding-bottom: 20px;
+}
+
+.opinions p{
+    border: none;
+}
+
+.good , .bad{
+    width: 30%;
+}
+
+.bad{
+    text-align: right;
+}
+
+.scorevalue{
+    font-size: 2em;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.red{
+    border: 5px solid red;
+    color: red;
+}
+
+.green{
+    border: 5px solid rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+}
+
+.orange{
+    border: 5px solid orange ;
+    color: orange;
+}
+
+.otherDetails{
+    height: 20vh;
+    width: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
+    background-color: rgb(29, 29, 29);
+    transform: translateY(50%);
+    border-top: 1px solid rgb(61, 61, 61);
+}
+
+.otherDetails div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.otherDetails h3{
+    color: var(--primary);
+    margin-bottom: 9px;
+}
+
+.otherDetails h5{
+    color: var(--tertiary);
+}
+
+.otherDetails h5 a{
+    color: rgb(115, 115, 255);
+}
+
+.otherDetails h5 a:hover{
+    text-decoration: underline;
+}

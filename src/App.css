@@ -1,0 +1,56 @@
+.App{
+ /* background: #ff4965;
+  background: -moz-linear-gradient(-45deg,  #ff4965 0%, #b44bcc 100%);
+  background: -webkit-linear-gradient(-45deg,  #ff4965 0%,#b44bcc 100%);
+  background: linear-gradient(135deg,  #ff4965 0%,#b44bcc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4965', endColorstr='#b44bcc',GradientType=1 );*/
+
+  background-color: rgb(20, 20, 20);
+  flex-direction: column;
+  padding-bottom: 2em;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root{
+  /*--primary : #FF4965;*/
+  --primary : rgb(173, 255, 47);
+  --secondary : rgb(19, 19, 19);
+  --tertiary : rgb(241, 255, 220);
+}
+
+footer{
+  position: static;
+  bottom: 0%;
+  top: 90%;
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center!important;
+  flex-direction: column;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 1px solid var(--primary);
+  background-color: rgba(4, 39, 0, 0.3);
+  
+  box-shadow: 0px 6px 12px rgba(4, 36, 0, 0.3);
+}
+
+footer h4, footer p{
+  color: rgb(232, 255, 226);
+  
+}
+
+footer h4{
+  margin-top: 2em;
+  transform: translateY(100%);
+}
+
+footer p{
+  color: rgba(231, 255, 225, 0.5);
+}

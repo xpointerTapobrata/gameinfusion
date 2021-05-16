@@ -1,0 +1,114 @@
+.listvids{
+    height: 94vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;   
+}
+
+.header{
+    padding: 1.5em;
+    width: 100%;
+    background-color: var(--primary);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    font-size: 0.8em;
+}
+
+.containerVid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+    height: 17vh;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
+    border-bottom: 1px solid rgb(75, 75, 75);
+    background-color: rgb(32, 32, 32);
+}
+
+.containerVid img{
+    border: 2px solid var(--primary);
+    margin-left: 5px;
+    border-radius: 50% !important;
+    height:  50px !important;
+    width: 50px;
+}
+
+.rightVid h4{
+    color: var(--primary);
+    font-size: 0.95em;
+}
+
+.rightVid h5{
+    color: var(--tertiary);
+}
+
+.rightVid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+
+    padding-left: 15px;
+}
+
+.listvids::-webkit-scrollbar{
+    background-color: black;
+    width: 6px;
+  }
+
+  .listvids::-webkit-scrollbar-thumb{
+    background-color: var(--primary);
+  }
+
+  .listvids::-webkit-scrollbar-track{
+      width: 10px;
+      background-color: black;
+      border-left: 1px solid greenyellow;
+  }
+  
+  .listvids::-webkit-scrollbar-thumb{
+      
+      border: 1px solid var(--primary);
+  }
+
+.rightVid h4:hover{
+    text-decoration: underline;
+}
+
+.vidgame{
+    color: greenyellow !important;
+    border: 1px solid var(--primary);
+    border-radius: 3px;
+    padding: 1px 10px;
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 1600px) {
+    .rightVid{
+        transform: scale(1.1);
+        font-size: 1.2em;
+        z-index: 0;
+        padding-left: 1px;
+    }
+
+    .header{
+        z-index: 5;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .watch{
+        transform: translateY(-1%);
+    }
+    .rightVid{
+        font-size: 1.05em;
+    }
+}
