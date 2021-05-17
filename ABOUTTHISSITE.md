@@ -35,7 +35,7 @@
   due to <strong>Commerce JS</strong>. Payment functionality is made possible with the help of <strong>Stripe JS</strong>.</p>
   <p>Regarding the use of APIs, every ESPORTS data ie, Leaderboards, Fixtures and Match streams are all fetched by using the <strong> PandaScore API </strong> and the YouTube
   contents like 'YouTube Streams' and search results are fetched using the <strong>YouTube v3.0 API</strong>. Dynamic rendering of the 'Happenings' tab was rendered using
-    the <strong> Gamespot API </strong> but unfortunately had to discard due to CORS policy</p>.
+    the <strong> Gamespot API </strong> but unfortunately had to be discarded due to CORS policy.</p>
  </br>
  <h4>FUTURE UPDATES</h4>
  <p>Once I'am done with my other projects, my portfolio website and possibly after I get hired, I will start working on the mobile version of thie website.</p>
