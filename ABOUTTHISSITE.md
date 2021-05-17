@@ -48,7 +48,7 @@
   sharing. As a result of that anyone who would like to see all the features of this website will have to install an extension named, <strong> Allow CORS : Access Control
   Allow Origin'</strong> from the <i>Chrome Web Store</i>. I regret the inconvinience caused but that is the only way to experience this website. Alternatively, you
   can watch my video of this website from my portfolio website which has been recorded in development mode and where everything is working nicely. While the PandaScore API
-  at least works with a CORS blocking extension, the Gamespot API still refuses to work which is why I was forced to remove the dynamic rendering of content on
+  at least works with a CORS unblocking extension, the Gamespot API still refuses to work which is why I was forced to remove the dynamic rendering of content on
   the 'Happenings' tab and add static data just so that the tab doesn't weirdly show a blank screen upon clicking. But you can still click on the 'News' and 'Reviews'
   to read more about the contents.</p>
   <p> One more issue that I encountered is with Stripe JS where I had difficulties trying to send data to backend (commerce JS) due to some Indian Government Regulations 
