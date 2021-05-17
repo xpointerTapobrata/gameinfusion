@@ -18,7 +18,7 @@
 <p> 4. Commerce JS </p>
 <p> 5. Stripe JS </p>
 <p> 6. CSS3 &nbsp; &nbsp; <i> and </i></p>
-<p> 7. Gamespot API (was used but discarded later due to unsupported CORS poilcy when site is deployed.</p>
+<p> 7. Gamespot API (was used but discarded later due to unsupported CORS poilcy when site is deployed).</p>
 </br>
 <h4> NPM PACKAGES </h4>
 <p> These are some of the npm packages used in this website : </p>
@@ -33,8 +33,9 @@
   it uses <strong>React Router Dom</strong> to traverse between different pages. The video functionality of this website is powered by <strong>React Player</strong>. The receipt
   functionality after purchase of an item is facilitated by <strong> React to PDF </strong>. The backend of this website that was used for ecommerce functionality is possible
   due to <strong>Commerce JS</strong>. Payment functionality is made possible with the help of <strong>Stripe JS</strong>.</p>
-  Regarding the use of APIs, every ESPORTS data ie, Leaderboards, Fixtures and Match streams are all fetched by using the <strong> PandaScore API </strong> and the YouTube
-  contents like 'YouTube Streams' and search results are fetched using the <strong>YouTube v3.0 API</strong>.
+  <p>Regarding the use of APIs, every ESPORTS data ie, Leaderboards, Fixtures and Match streams are all fetched by using the <strong> PandaScore API </strong> and the YouTube
+  contents like 'YouTube Streams' and search results are fetched using the <strong>YouTube v3.0 API</strong>. Dynamic rendering of the 'Happenings' tab was rendered using
+    the <strong> Gamespot API </strong> but unfortunately had to discard due to CORS policy</p>.
  </br>
  <h4>FUTURE UPDATES</h4>
  <p>Once I'am done with my other projects, my portfolio website and possibly after I get hired, I will start working on the mobile version of thie website.</p>
