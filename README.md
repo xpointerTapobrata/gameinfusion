@@ -38,17 +38,17 @@
     the <strong> Gamespot API </strong> but unfortunately had to be discarded due to CORS policy.</p>
  </br>
  <h4>FUTURE UPDATES</h4>
- <p>Once I'am done with my other projects, my portfolio website and possibly after I get hired, I will start working on the mobile version of thie website.</p>
+ <p>Once I'am done with my other projects, my portfolio website and possibly after I get hired, I will start working on the mobile version of the website.</p>
  </br>
  <h4>DISTANT FUTURE PLANS</h4>
- <p>In decent future, I have plans of rewriting the code of the website and trying to improve the code quality which is bit messy as of now and might try to make
+ <p>In decent future, I have plans of rewriting the code of the website and to try improve the code quality which is bit messy as of now and might try to make
   it scalable if I gain exprerience from professional environment. Nothing regarding my distant future plans is certain right now.</p>
  </br>
  <h4>KNOWN ISSUES</h4>
  <p>As mentioned in the <i>IMPORTANTREAD.md</i> file, fetching data from PandaScore API and Gamespot API was hindered by the CORS policy that blocks cross domain resource
   sharing. As a result of that anyone who would like to see all the features of this website will have to install an extension named, <strong> Allow CORS : Access Control
   Allow Origin'</strong> from the <i>Chrome Web Store</i>. I regret the inconvinience caused but that is the only way to experience this website. Alternatively, you
-  can watch my video of this website from my portfolio website which has been recorded in development mode and where everything is working nicely. While the PandaScore API
+  can watch my video of this website from my portfolio website which has been recorded using the extensions and where everything is working nicely. While the PandaScore API
   at least works with a CORS unblocking extension, the Gamespot API still refuses to work which is why I was forced to remove the dynamic rendering of content on
   the 'Happenings' tab and add static data just so that the tab doesn't weirdly show a blank screen upon clicking. But you can still click on the 'News' and 'Reviews'
   to read more about the contents.</p>
