@@ -4,7 +4,7 @@
 </br>
 <h4> INTRODUCTION </h4>
 <p>
-    Game Infusion is a video streaming cum e-Commerce website that fetches data from various APIs to display video game related information and professional video
+    Game Infusion is a website dedicated to gaming. It is a video streaming & e-Commerce website that fetches data from various APIs to display video game related information and professional video
   gaming tournaments like Esports from around the world. The website features an e-commerce functionality that enables the visitor to buy games, gears (mainly consoles)
   and game passes. The website also contains search functionality where it fetches data from YouTube v3.0 API to provide you with the live stream results
   of various YouTubers that matches the game you searched for.
